@@ -2,7 +2,7 @@
   "name": "express.js-mysql-backend-test",
   "version": "1.0.0",
   "description": "Node.js MySql backend test",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
