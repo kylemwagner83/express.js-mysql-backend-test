@@ -32,7 +32,7 @@ Tutorial.findById = (id, result) => {
             result(null, res[0]);
             return;
         }
-        // not found Tutorial with the id
+        // Tutorial with id not found
         result({ kind: "not_found" }, null);
     });
 };
@@ -79,7 +79,7 @@ Tutorial.updateById = (id, tutorial, result) => {
                 return;
             }
             if (res.affectedRows == 0) {
-                // not found Tutorial with the id
+                // Tutorial with id not found
                 result({ kind: "not_found" }, null);
                 return;
             }
@@ -98,7 +98,7 @@ Tutorial.remove = (id, result) => {
             return;
         }
         if (res.affectedRows == 0) {
-            // not found Tutorial with the id
+            // Tutorial with id not found
             result({ kind: "not_found" }, null);
             return;
         }
