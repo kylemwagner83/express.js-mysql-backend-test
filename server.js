@@ -15,10 +15,8 @@ app.use(express.urlencoded({ extended: true}))
 
 // Basic route
 app.get("/", (req,res) => {
-    res.json({message: "Basic route message!"})
+    res.json({message: "Connected to API!"})
 });
-// require("./app/routes/tutorial.routes.js")(app);
-
 
 // Set port and listen for requests
 const PORT = process.env.PORT || 8080;

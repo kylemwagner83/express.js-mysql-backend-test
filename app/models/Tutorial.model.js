@@ -64,8 +64,11 @@ Tutorial.getAllPublished = result => {
         }
         console.log("tutorials: ", res);
         result(null, res);
-    });
+    });    
 };
+
+
+
 
 
 Tutorial.updateById = (id, tutorial, result) => {
