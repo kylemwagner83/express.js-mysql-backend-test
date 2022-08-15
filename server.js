@@ -17,7 +17,8 @@ app.use(express.urlencoded({ extended: true}))
 app.get("/", (req,res) => {
     res.json({message: "Basic route message!"})
 });
-require("./app/routes/tutorial.routes.js")(app);
+// require("./app/routes/tutorial.routes.js")(app);
+
 
 // Set port and listen for requests
 const PORT = process.env.PORT || 8080;
